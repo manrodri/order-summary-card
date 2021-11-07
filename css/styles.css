@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom Properties, update these for your own design */
+
+
+:root {
+    --ff-primary: 'Red Hat Display', sans-serif;
+
+    --fw-reg: 300;
+    --fw-bold: 700;
+    --fw-black: 900;
+
+    --clr-pale-blue: hsl(225, 100%, 94%);
+    --clr-bright-blue: hsl(245, 75%, 52%);
+    --clr-very-pale-blue:  hsl(225, 100%, 98%);
+    --clr-desaturated-blue:hsl(224, 23%, 55%);
+    --clr-dark-blue: hsl(223, 47%, 23%);
+;
+    --fs-h2: 1.75rem;
+    --fs-h4: 1.1.25rem;
+    --fs-body: 1rem;
+
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h2: 2.25rem;
+        --fs-h4: 1.25rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* general styles */
+
+body {
+    background: var(--clr-pale-blue);
+    color: var(--clr-pale-blue);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+:focus {
+    outline: 3px solid var(--clr-desaturated-blue);
+}
+
+.btn {
+    display: block;
+    padding: .5em 2.5em;
+    cursor: pointer;
+    font-size: .8rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: trasnform 200ms ease-in-out;
+
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.1);
+}
+
+/* typography */
+
+h2,
+h4 {
+    line-height: 1;
+    margin: 0;
+}
+
+h2 {
+    font-size: var(--fs-h2)
+}
+
+h4 {
+    font-size: var(--fs-h4)
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 5em 2em;
+    
+}
+
+/* hero section */
+
+.hero {
+    background-color: var(--clr-bright-blue);
+    background-image: url(../images/illustration-hero.svg);
+    background-size: cover;
+    padding: 5em 2em;
+    /* background-blend-mode: multiply; */
+}
+
+
+/* information section */
+
+.information {
+    background-color: #FFF;
+    text-align: center;
+    padding: 2em 1.5em;
+}
+
+.information__title {
+    color: var(--clr-dark-blue);
+}
+
+.information__content {
+    color: var(--clr-desaturated-blue);
+}
+
+.information__card {
+    border-radius: 1rem;
+    background: var(--clr-very-pale-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em
+
+}
+
+.btn-change {
+    padding: 0;
+    text-decoration: underline;
+}
+
+.subscription-plan{
+   
+    margin: 0;
+}
+
+.btn-payment,
+.btn-cancel {
+    margin-top: 1.5em;
+    font-size: var(--fs-h4);
+}
+
+.btn-payment {
+    background-color: var(--clr-bright-blue);
+    color: #FFF;
+    border-radius: 1em;
+    padding: 1em 2em;
+    
+
+}
+
