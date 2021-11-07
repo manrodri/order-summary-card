@@ -118,7 +118,7 @@ h4 {
     color: var(--clr-dark-blue);
 }
 
-.information__content {
+.information__content  {
     color: var(--clr-desaturated-blue);
 }
 
@@ -140,6 +140,15 @@ h4 {
 .subscription-plan{
    
     margin: 0;
+}
+
+.subscription-plan__title {
+    color: var(--clr-dark-blue);
+
+}
+
+.subscription-plan .price{
+    color: var(--clr-desaturated-blue);
 }
 
 .btn-payment,
